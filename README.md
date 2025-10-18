@@ -6,7 +6,7 @@
 ## Информация о себе:
 
 - Название команды:
-<h1 style="text-align:left;"> TEAM </h1>
+<h1 style="text-align:center;"> TEAM </h1>
 
 - Участники:
 [Подробно](CONTRIBUTING.md)
