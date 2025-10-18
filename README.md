@@ -84,6 +84,9 @@ project/
 
 ...
 
+<img src="image/gifka1.gif" width="60%" height="60%" />
+...
+
 # Планы на будущее
 ...
 
