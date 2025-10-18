@@ -73,11 +73,15 @@ project/
 !!!
 
 # Примеры с интерфейсом*
-![interface](image/webUI.png)
+
+<img src="image/webUI.png" width="60%" height="60%" />
+
 ...
 
 # Примеры функционала*
-![fnc](image/funcGUI.png)
+
+<img src="image/funcGUI.png" width="60%" height="60%" />
+
 ...
 
 # Планы на будущее
