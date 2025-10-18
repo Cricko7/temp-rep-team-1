@@ -73,9 +73,11 @@ project/
 !!!
 
 # Примеры с интерфейсом*
+![interface](image/webUI.png)
 ...
 
 # Примеры функционала*
+![fnc](image/funcGUI.png)
 ...
 
 # Планы на будущее
