@@ -121,7 +121,7 @@ go run main.go
 ```
 
 
-**`main.go` (готовый Go сервер):**
+- - **`main.go` (готовый Go сервер):**
 
 ```
 package main
@@ -158,8 +158,6 @@ cd frontend
 npm install
 npm run dev # http://localhost:3000
 ```
-
-
 
 ---
 
@@ -214,16 +212,22 @@ npm run dev # http://localhost:3000
 
 ---
 
+<div align="center">
+
+#### Также мы предоставляем вам тест, отснятый на видео: **link**
+
+
 ## ✅ **Реализованный функционал**
 
-<div align="center">
-| ✅ **Go Backend** | ✅ **React Frontend** | ✅ **DevOps** |
-|---|---|---|
-| REST API | TypeScript UI | Docker Stack |
-| WebSocket | Tailwind CSS | CI/CD Pipeline |
-| JWT Auth | Vite HMR | GitHub Actions |
+| **Backend (Go)** | **Frontend (React/TS)** | **DevOps** |
+|------------------|-------------------------|------------|
+| ✅ REST API | ✅ TypeScript UI | ✅ Docker Stack |
+| ✅ WebSocket | ✅ Tailwind CSS | ✅ CI/CD Pipeline |
+| ✅ JWT Auth | ✅ Vite HMR | ✅ GitHub Actions |
+| ✅ GORM ORM | ✅ Responsive Design | ✅ Auto Tests |
 
 </div>
+
 
 ---
 
@@ -272,6 +276,6 @@ run: cd frontend && npm test
 ## 📄 **Лицензия**
 [![MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-**⭐ Star если помогло!**
+** Поставьте --> ⭐ Star, если помогло!**
 
 </div>
