@@ -42,3 +42,236 @@
 > cp .env.example .env && code .env
 > ```
 
+---
+
+### 🌐 Сервер (Go)
+
+```
+PORT=8080
+HOST=0.0.0.0
+```
+
+### 🗄️ PostgreSQL
+
+```
+DATABASE_URL=postgres://postgres:secret123@localhost:5432/project_db
+```
+
+### 🔐 JWT Auth
+
+```
+JWT_SECRET=your-super-secret-key-change-in-production
+```
+
+### 🎨 Frontend (React/TS)
+
+```
+REACT_APP_API_URL=http://localhost:8080/api
+VITE_API_URL=http://localhost:8080/api
+```
+
+🛡️ Redis (WebSocket сессии)
+
+```
+REDIS_URL=redis://localhost:6379
+```
+
+
+---
+
+## 🚀 **Быстрый старт**
+
+```
+git clone https://github.com/username/project-name.git project-name
+cd project-name
+cp .env.example .env
+docker-compose up -d
+```
+
+#### 🌐 Frontend (React): http://localhost:3000
+#### 🔧 Backend (Go): curl http://localhost:8080/health
+
+
+> [!SUCCESS|label=✅ Готово!]
+> ```
+> 🛠️ Go сервер: :8080 ✅
+> 🎨 React UI: :3000 ✅
+> 🗄️ DB: :5432 ✅
+> 🛡️ Redis: :6379 ✅
+> ```
+
+---
+
+## 🛠️ **Установка**
+
+### 🐳 **Docker** *(рекомендуется)*
+
+```
+docker-compose up --build
+docker-compose logs -f backend
+```
+
+
+### ⚙️ **Backend (Go 1.22+)**
+
+```
+cd backend
+go mod tidy
+go run main.go
+```
+
+
+**`main.go` (готовый Go сервер):**
+
+```
+package main
+
+import (
+"log"
+"net/http"
+"github.com/gin-gonic/gin"
+)
+
+func main() {
+r := gin.Default()
+```
+
+```
+r.GET("/health", func(c *gin.Context) {
+    c.JSON(http.StatusOK, gin.H{
+        "status": "OK", 
+        "lang": "Go 1.22",
+        "version": "1.0.0"
+    })
+})
+
+log.Println("🚀 Go Server starting on :8080")
+log.Fatal(http.ListenAndServe(":8080", r))
+}
+```
+
+
+### 🎨 **Frontend (React + TypeScript)**
+
+```
+cd frontend
+npm install
+npm run dev # http://localhost:3000
+```
+
+
+
+---
+
+## 📁 **Структура проекта**
+
+```
+📂 project/
+├── 📂 backend/ # 🛠️ Go 1.22+
+│ ├── main.go # ✅ Go сервер
+│ ├── go.mod # Gin + GORM
+├── 📂 frontend/ # 🎨 React 18+ + TypeScript
+│ ├── src/
+│ ├── package.json # React, Vite, Tailwind
+├── ⚙️ .env.example
+├── 🐳 docker-compose.yml
+├── 🤖 .github/workflows/ci.yml
+├── 🖼️ assets/
+├── 📄 LICENSE
+└── 📖 CONTRIBUTING.md
+```
+
+---
+
+## 🏗️ **Архитектура**
+
+| 🎯 **Компонент** | 🛠️ **Язык** | 🛠️ **Фреймворк** | 🚀 **Команда** | 🌐 **Порт** |
+|------------------|--------------|-------------------|----------------|-------------|
+| **Frontend** | TypeScript<br>JavaScript | React 18+, Vite | `npm run dev` | :3000 |
+| **Backend** | **Go 1.22** | Gin, GORM | `go run main.go` | :8080 |
+| **Database** | SQL | PostgreSQL 16 | Docker | :5432 |
+| **Cache** | - | Redis | Docker | :6379 |
+
+
+
+---
+
+## 📸 **Демо**
+
+<div align="center">
+<table>
+<tr>
+<td><img src="assets/webUI.png" width="500" /></td>
+<td><img src="assets/server-logs.png" width="500" /></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<img src="assets/demo.gif" width="800" />
+</td>
+</tr>
+</table>
+</div>
+
+---
+
+## ✅ **Реализованный функционал**
+
+<div align="center">
+| ✅ **Go Backend** | ✅ **React Frontend** | ✅ **DevOps** |
+|---|---|---|
+| REST API | TypeScript UI | Docker Stack |
+| WebSocket | Tailwind CSS | CI/CD Pipeline |
+| JWT Auth | Vite HMR | GitHub Actions |
+
+</div>
+
+---
+
+## 🤝 **Как внести вклад** 
+
+1. `git checkout -b feature/ваша-идея`
+2. `git commit -m "feat(Go/React): описание"`
+3. `git push origin feature/ваша-идея`
+4. **Pull Request** 🎉
+
+[📖 CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
+## 📈 **CI/CD** *(тесты Go + React)*
+
+```
+name: 🚀 CI/CD
+on: [push, pull_request]
+jobs:
+test:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- name: Test Go Backend
+run: cd backend && go test ./...
+- name: Test React Frontend
+run: cd frontend && npm test
+```
+
+
+---
+
+## 🔮 **Roadmap**
+
+| 📋 **Задача** | 📊 **Статус** |
+|--------------|---------------|
+| Kubernetes | 🔄 |
+| Mobile App (React Native) | ⏳ |
+| AI Features | ⏳ |
+
+---
+
+<div align="center">
+
+## 📄 **Лицензия**
+[![MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+**⭐ Star если помогло!**
+
+</div>
