@@ -276,6 +276,6 @@ run: cd frontend && npm test
 ## 📄 **Лицензия**
 [![MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-** Поставьте --> ⭐ Star, если помогло!**
+**Поставьте --> ⭐ Star, если помогло!**
 
 </div>
