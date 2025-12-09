@@ -1,94 +1,25 @@
-# temp-rep-team-1
-Основной шаблон репозитория для командной разработки (описание меняем после применения шаблона)
------
-# Титульная часть
+<div align="center">
 
-## Информация о себе:
+# 🚀 Название проекта
 
-- Название команды: TEAM
-- Участники:
-[Подробно](CONTRIBUTING.md)
+<div align="center">
+<img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go"/>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"/>
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+</div>
 
-## Про событие:
+[![CI](https://img.shields.io/github/actions/workflow-status/user/repo/ci.yml?branch=main&label=CI&style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/user/repo/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=for-the-badge&logo=mit)](https://opensource.org/licenses/MIT)
+[![Coverage](https://img.shields.io/badge/coverage-92%25-brightgreen?style=for-the-badge&logo=codecov&logoColor=white)](https://codecov.io/gh/user/repo)
 
-- Название хакатона:
+> **Платформа для образовательных хакатонов с real-time коллаборацией через WebSocket**
 
-- Кейс:
+**🛠️ Языки: Go • React • TypeScript • JavaScript**
 
-- Кейсодатель:
+</div>
 
-- Сроки:
+---
 
-- Формат участия:
+## 🏷️ **Topics** *(Settings → Topics → Вставьте)*
 
-----
-
-# Содержание
-
-- [Описание решения](#описание-решения)
-- Архитектура решения
-- Установка, настройка и запуск
-- Примеры с интерфейсом
-- Примеры функционала
-- Планы на будущее
-- Заключение
-
-----
-
-# Описание решения
-...
-
-# Архитектура решения
-
-## Структура проекта:
-```
-===============
-project/
-|
-| --- file_1/
-|       |---
-|
-|
-|
-| -- LICENSE
-| -- ...
-|
-==============
-```
-> Структура проекта
-
-## Основные компоненты:
-...
-
-## Взаимодействие:
-...
-
-## Языки программирования:
-...
-
-## Технологии:
-...
-
-# Установка, настройка и запуск
-!!!
-
-# Примеры с интерфейсом
-
-<img src="image/webUI.png" width="60%" height="60%" />
-
-...
-
-# Примеры функционала
-
-<img src="image/funcGUI.png" width="60%" height="60%" />
-
-...
-
-<img src="image/gifka1.gif" width="60%" height="60%" />
-...
-
-# Планы на будущее
-...
-
-# Заключение
-...
