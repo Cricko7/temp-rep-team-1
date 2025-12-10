@@ -141,23 +141,6 @@ yolo predict model=runs/detect/train/weights/best.pt source=dataset/test/images
 | **MLOps** | Weights&Biases, MLflow | Auto logging |
 
 
-graph TB
-    A[📸 БПЛА Images] --> B[🔄 Preprocessing]
-    B --> C[🎯 YOLOv8 Training]
-    C --> D[⚡ ONNX Export]
-    D --> E[📊 Test Prediction]
-    E --> F[📄 submission.csv]
-    F --> G[🏆 Kaggle Leaderboard]
-    
-    classDef input fill:#e3f2fd
-    classDef process fill:#f3e5f5
-    classDef output fill:#e8f5e8
-    class A input
-    class B,C,D process
-    class E,F,G output
-
-
-
 ---
 
 ## 📈 **Результаты модели**
